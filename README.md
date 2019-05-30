@@ -13,6 +13,6 @@ You should:
 on slack/skype). This will help you stay organized and will allow me to see how
 you organise yourself and divide tasks.
 * Fork this repo
-* Work on the project
+* Work on the project (Do not add files to the root folder where this README is)
 * DO NOT push to your repo directly. Open a *PULL REQUEST* and send me the url
 so I can review it. This will allow me to help you on every commit.
