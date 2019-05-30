@@ -3,7 +3,7 @@ import React from 'react';
 const App = () => {
   return (
     <div>
-      Movie Browser
+      Movie Browser Test Test Testing
     </div>
   );
 }
