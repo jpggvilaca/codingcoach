@@ -1,17 +1,13 @@
 import React from 'react';
-import FeatureMovie from './components/FeatureMovie/FeatureMovie';
-import TrendingMovies from './components/TrendingMovies/TrendingMovies';
-import DisplayMovies from './components/DisplayMovies/DisplayMovies';
+import MovieList from './components/MovieList';
 
 const App = () => {
-	return (
-		<div>
-			<h1>Movie Browser</h1>
-			<FeatureMovie />
-			<TrendingMovies />
-			<DisplayMovies />
-		</div>
-	);
+  return (
+    <div>
+      <h1>Movie Browser</h1>
+      <MovieList />
+    </div>
+  );
 };
 
 export default App;
