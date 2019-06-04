@@ -9,10 +9,10 @@ I will provide all the requirements and technical info on the README of each
 assignment.
 
 You should:
-* [v] Create a board on https://trello.com/ and invite me (through private message 
+* [x] Create a board on https://trello.com/ and invite me (through private message 
 on slack/skype). This will help you stay organized and will allow me to see how
 you organise yourself and divide tasks.
-* [v] Fork this repo
+* [x] Fork this repo
 * [ ] Go to the project folder and work on it (Do not add files to the root folder where this README is)
 * [ ] Instructions for the assignment will be on the README inside the assignments's folder.
 
