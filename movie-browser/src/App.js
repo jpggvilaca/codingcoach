@@ -23,6 +23,7 @@ class App extends Component {
   }
 
   render() {
+    const { movies } = this.state;
     return (
       <div>
         <h1>Movie Browser</h1>
