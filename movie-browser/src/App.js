@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div>
         <h1>Movie Browser</h1>
-        <MovieList />
+        <MovieList allMovies={movies} />
       </div>
     );
   }

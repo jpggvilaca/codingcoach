@@ -1,10 +1,18 @@
 import React from 'react';
+const placeholderImg = 'https://picsum.photos/140/100'; //TODO: Figure out what images to display
 
-const MovieList = () => {
+const MovieList = props => {
   return (
     <div>
-      <h3>Trending Movies</h3>
       <h3>All Movies</h3>
+      {props.allMovies.map(movie => (
+        <div key={movie.id}>
+          <li>{movie.title}</li>
+          <li>
+            <img src={placeholderImg} alt="placeholder" />
+          </li>
+        </div>
+      ))}
     </div>
   );
 };
