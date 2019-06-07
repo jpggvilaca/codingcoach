@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MovieList from './components/MovieList';
-import axios from 'axios';
+import { fetchData } from './api';
 
 const URL = 'https://ghibliapi.herokuapp.com/films';
 
@@ -10,11 +10,10 @@ class App extends Component {
   };
 
   componentDidMount() {
-    axios
-      .get(URL)
+    fetchData(URL)
       .then(res => {
         this.setState({
-          movies: res.data,
+          movies: res,
         });
       })
       .catch(err => {
@@ -24,6 +23,7 @@ class App extends Component {
 
   render() {
     const { movies } = this.state;
+
     return (
       <div>
         <h1>Movie Browser</h1>

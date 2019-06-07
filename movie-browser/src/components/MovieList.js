@@ -1,5 +1,6 @@
 import React from 'react';
-const placeholderImg = 'https://picsum.photos/140/100'; //TODO: Figure out what images to display
+
+const placeholderImg = 'https://picsum.photos/140/100';
 
 const MovieList = props => {
   return (
