@@ -8,7 +8,7 @@ const URL = 'https://ghibliapi.herokuapp.com/films';
 class App extends Component {
   state = {
     movies: [],
-    toggleMovies: 'false',
+    showMovies: false,
     buttonText: 'Show Movies', // no movies displaying on initial render
   };
 
@@ -24,27 +24,23 @@ class App extends Component {
       });
   }
 
-  handleToggleMovies = () => {
-    if (!this.state.toggleMovies) {
-      this.buttonText = 'Show Movies';
-    } else {
-      this.buttonText = 'Hide Movies';
-    }
+  handleShowMovies = () => {
+    const { showMovies } = this.state;
 
     this.setState({
-      toggleMovies: !this.state.toggleMovies,
-      buttonText: this.buttonText,
+      showMovies: !this.state.showMovies,
+      buttonText: showMovies ? 'Show Movies' : 'Hide Movies',
     });
   };
 
   render() {
-    const { movies, buttonText, toggleMovies } = this.state;
+    const { movies, buttonText, showMovies } = this.state;
 
     return (
       <div>
         <h1>Movie Browser</h1>
-        <Button buttonName={buttonText} onClick={this.handleToggleMovies} />
-        {!toggleMovies && <MovieList allMovies={movies} />}
+        <Button buttonName={buttonText} onClick={this.handleShowMovies} />
+        {showMovies && <MovieList allMovies={movies} />}
       </div>
     );
   }
