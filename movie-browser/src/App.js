@@ -38,13 +38,13 @@ class App extends Component {
   };
 
   render() {
-    const { movies, buttonText } = this.state;
+    const { movies, buttonText, toggleMovies } = this.state;
 
     return (
       <div>
         <h1>Movie Browser</h1>
         <Button buttonName={buttonText} onClick={this.handleToggleMovies} />
-        <MovieList allMovies={movies} />
+        {!toggleMovies && <MovieList allMovies={movies} />}
       </div>
     );
   }
