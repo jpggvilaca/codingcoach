@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MovieList from './components/MovieList';
+import Button from './components/Button';
 import { fetchData } from './api';
 
 const URL = 'https://ghibliapi.herokuapp.com/films';
@@ -7,6 +8,8 @@ const URL = 'https://ghibliapi.herokuapp.com/films';
 class App extends Component {
   state = {
     movies: [],
+    showMovies: false,
+    buttonText: 'Show Movies', // no movies displaying on initial render
   };
 
   componentDidMount() {
@@ -21,13 +24,23 @@ class App extends Component {
       });
   }
 
+  handleShowMovies = () => {
+    const { showMovies } = this.state;
+
+    this.setState({
+      showMovies: !this.state.showMovies,
+      buttonText: showMovies ? 'Show Movies' : 'Hide Movies',
+    });
+  };
+
   render() {
-    const { movies } = this.state;
+    const { movies, buttonText, showMovies } = this.state;
 
     return (
       <div>
         <h1>Movie Browser</h1>
-        <MovieList allMovies={movies} />
+        <Button buttonName={buttonText} onClick={this.handleShowMovies} />
+        {showMovies && <MovieList allMovies={movies} />}
       </div>
     );
   }
