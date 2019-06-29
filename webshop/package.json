@@ -1,0 +1,54 @@
+{
+  "name": "webshop",
+  "version": "0.1.0",
+  "private": true,
+  "author": "João Vilaça",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^8.0.4",
+    "jest-styled-components": "^6.3.3",
+    "react-scripts": "3.0.1",
+    "husky": "^2.7.0",
+    "jest-dom": "^3.5.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "test:watch": "react-scripts test --env=jsdom --watch --coverage",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!<rootDir>/node_modules",
+      "!<rootDir>/src/store.js",
+      "!<rootDir>/src/index.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
