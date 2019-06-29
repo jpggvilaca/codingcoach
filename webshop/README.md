@@ -38,6 +38,7 @@ the cart. (product added/deleted or quantity changed)
 * For styling use [Styled Components](https://www.styled-components.com/)
 * For API calls you use [Axios](https://github.com/axios/axios)
 * Tests are MANDATORY (minimum 90% code coverage)
+* OUT OF SCOPE: security, SEO, accessibility
 
 * Bonus points for responsive styles
 * Bonus points for semantic HTML
