@@ -5,8 +5,9 @@ The objective is to build a fake webshop using best buy's API
 * HTML
 * CSS
 * Javascript
-* React (hooks optional)
-* Redux (optional)
+* React
+* Redux
+* Hooks (optional)
 * React-Router
 * react-testing-library
 * Styled components
