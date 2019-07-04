@@ -16,7 +16,16 @@ exports[`Header Should render correctly 1`] = `
   <div
     class="c0"
   >
-    Header
+    <h2
+      data-testid="title"
+    >
+      Header
+    </h2>
+    <input
+      data-testid="updateTitle-input"
+      type="text"
+      value="Header"
+    />
   </div>
 </header>
 `;
