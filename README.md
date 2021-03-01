@@ -24,3 +24,6 @@ you organise yourself and divide tasks.
 
 ## Instructions unclear?
 Please send me a message on skype/slack so I can update the README.
+
+* How to fork a repo: https://www.earthdatascience.org/workshops/intro-version-control-git/about-forks/#:~:text=You%20can%20fork%20any%20repo,Source%3A%20GitHub%20Guides.
+* How to open a pull request: https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork
