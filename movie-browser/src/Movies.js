@@ -20,8 +20,13 @@ const Movies = () => {
 
   return (
     <div>
+<<<<<<< Updated upstream
       {data.map((item) => {
         return <MovieCard key={item.id} data={item} />;
+=======
+      {data.data.map((item) => {
+        return <MovieCard key={item.id} {...item} />;
+>>>>>>> Stashed changes
       })}
     </div>
   );
