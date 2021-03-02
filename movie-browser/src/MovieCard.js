@@ -1,8 +1,8 @@
 import React from 'react';
 
-const MovieCard = (props) => {
-  const { title, description } = props;
-  console.log(props);
+const MovieCard = ({ data }) => {
+  const { title, description } = data;
+
   return (
     <div>
       <h1>{title}</h1>

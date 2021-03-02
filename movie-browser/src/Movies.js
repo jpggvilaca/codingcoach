@@ -1,29 +1,27 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import MovieCard from './MovieCard';
-import { useState, useEffect } from 'react';
 
 const Movies = () => {
-  let [data, setData] = useState({ data: [] });
+  let [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios('https://ghibliapi.herokuapp.com/films');
 
       if (result && result.data) {
-        setData({ data: result.data });
+        setData(result.data);
       }
     };
+
     fetchData();
   }, []);
 
-  //   console.log(data);
-
-  //   return <MovieCard data={data} />;
   return (
     <div>
-      {data.data.map((item) => {
-        return <MovieCard key={item.id} data={data} />;
+      {data.map((item) => {
+        return <MovieCard key={item.id} data={item} />;
       })}
     </div>
   );
